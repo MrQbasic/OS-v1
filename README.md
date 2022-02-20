@@ -9,3 +9,5 @@
 -Windows:
   -Compile: wmake/make.bat
   -Run: wmake/run.bat
+
+THIS PROJECT IS NOT 100% WORKING!
