@@ -1,0 +1,9 @@
+Low-MEM:
+0x0000 0000 - 0x7FFF FFFF              User Programm       2GiB
+High-MEM:
+0x8000 0000 - 0x8000 07FF              IDT                 2KiB
+0x8000 0800 - 0x8001 07FF              GDT                64KiB                 
+0x8001 0800 - 0x8001 0BFF              KERNEL_VAR          1KiB
+
+0x8001 0C00 - 0x8010 0000              KERNEL_TABLE SPACE  1022KiB
+0x8020 0000 - 0xFFFF FFFF              KERNEL
