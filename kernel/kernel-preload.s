@@ -34,7 +34,6 @@ PM_enter_2:
 %include "./idt.s"
 %include "./screen.s"
 %include "./exceptions.s"
-%include "./disk.s"
 %include "./pic.s"
 %include "./pci.s"
 ;------------------------------------------------------------------------------------------------------------------------------
@@ -55,9 +54,6 @@ start:
 	call idt_init					;init IDT. GDT is already set up beacuse we are in PM
 	mov ebx, T_IDT
 	call screen_print_string
- 
- 
-	call disk_probe_port
 
 
 exit:
