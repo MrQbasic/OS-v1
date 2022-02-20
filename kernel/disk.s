@@ -23,10 +23,10 @@
 disk_port_rebase:
     pushad
 
-    mov [ebx+HBA_MEM_ghc], (1 << 31)
-    mov [ebx+HBA_MEM_ghc], (1 <<  0)
-    mov [ebx+HBA_MEM_ghc], (1 << 31)
-    mov [ebx+HBA_MEM_ghc], (1 <<  1)
+    ;mov [ebx+HBA_MEM_ghc], (1 << 31)
+    ;mov [ebx+HBA_MEM_ghc], (1 <<  0)
+    ;mov [ebx+HBA_MEM_ghc], (1 << 31)
+    ;mov [ebx+HBA_MEM_ghc], (1 <<  1)
 
     call disk_stop_cmd
 
