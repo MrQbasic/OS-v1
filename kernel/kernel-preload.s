@@ -56,22 +56,16 @@ start:
 	mov ebx, T_IDT
 	call screen_print_string
  
-
+ 
 	call disk_probe_port
 
-	mov eax, 0xF
-	test eax, eax
-	jne hang
 
 exit:
-	mov ebx, T_HANDOVER
-	call screen_print_string
 	jmp $
 
+	mov ebx, T_HANDOVER
+	call screen_print_string
 	call KERNEL
-hang:
-	jmp $							;hang
-
 
 
 T_BOOTMSG:			db "----KEREL BOOT----\e"

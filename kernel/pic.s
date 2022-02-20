@@ -5,13 +5,11 @@ pic_remap:
     pushad
     push ebx
     push eax
-
     mov dx, PIC1_COMMAND
     mov al, 0x11
     out dx, al
     mov dx, PIC2_COMMAND
     out dx, al
-
     ;save marks
     in al, PIC1_DATA
     mov cl, al
